@@ -71,7 +71,7 @@ img {
   color: #70a6be;
 }
 
-/* contact-list */
+/* lista contatti */
 .contact-list .contact-box {
   background-color: #ffffff;
 }
@@ -85,19 +85,38 @@ img {
   color: gray;
 }
 
-/* contact-open */
+/* contatto aperto */
 .open-contact {
-  background-color: antiquewhite;
+  border-left: 1px solid lightgray;
+  background-color: #eaeaea;
   height: 60px;
 }
 
-.open-contact .details {
+.open-contact .icon-contact {
   width: 80px;
-  margin-right: 1rem;
+  padding-right: 1rem;
 }
 
-/* message-area */
-.message-area {
+/* area messaggi */
+.chat {
   height: calc(100% - 60px);
   padding-top: 30px;
+}
+
+/* CLASSI MESSAGGI */
+.box-message {
+  height: 40px;
+  width: 250px;
+  line-height: 40px;
+}
+
+.sent {
+  background-color: rgb(124, 204, 144);
+  margin-left: 50%;
+  margin-right: 30px;
+}
+
+.received {
+  background-color: wheat;
+  margin-left: 10%;
 }

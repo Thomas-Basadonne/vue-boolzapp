@@ -41,7 +41,7 @@
   <body>
     <div id="root">
       <div class="container-app">
-        <div class="row">
+        <div class="row g-0">
           <!--COLONNA SINISTRA ELENCO CHAT -->
           <div class="col-5">
             <!-- PROFILO PERSONALE -->
@@ -113,11 +113,22 @@
                 <img src="./img/avatar_1.jpg" alt="">
                 <span>Michele</span>
             </div>
-            <div class="icon d-flex justify-content-between align-items-center">
+            <div class="icon-contact d-flex justify-content-between align-items-center">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-paperclip"></i>
                 <i class="fas fa-ellipsis-v"></i>
             </div>
+        </div>
+
+        <!-- area messaggi -->
+        <div class="chat">
+
+            <div v-for="(message, index) in contacts[activeChat].messages"
+                class="mb-3 box-message"
+                :class="(message.status == 'sent') ? 'sent' : 'received'"
+           >
+              {{ message.text }}
+         </div>
         </div>
           <!-- row -->
         </div>
