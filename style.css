@@ -1,0 +1,103 @@
+/* container app */
+.container-app {
+  width: 90%;
+  height: 95vh;
+  background-image: url(./img/mine.jpg);
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.row {
+  height: 100%;
+  padding: 0;
+}
+
+.col-5 {
+  background-color: aliceblue;
+  padding: 0;
+}
+
+.col-7 {
+  padding: 0;
+}
+
+/* profile */
+.my-profile {
+  height: 60px;
+  background-color: #eaeaea;
+}
+
+img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.my-profile .icon {
+  width: 90px;
+}
+
+.my-profile .icon i {
+  font-size: 1.2rem;
+}
+
+/* BANNER NOTIFICHE */
+
+.notifiche {
+  height: 70px;
+  background-color: #8edafc;
+}
+
+.notifiche .bell {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+.notifiche .bell i {
+  color: #8edafc;
+  font-size: 1.3rem;
+}
+
+.notifiche .bold-text {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.notifiche a {
+  font-size: 1rem;
+  color: #70a6be;
+}
+
+/* contact-list */
+.contact-list .contact-box {
+  background-color: #ffffff;
+}
+
+.contact-list .contact-box {
+  border: 1px solid lightgray;
+}
+
+.contact-text p {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+/* contact-open */
+.open-contact {
+  background-color: antiquewhite;
+  height: 60px;
+}
+
+.open-contact .details {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+/* message-area */
+.message-area {
+  height: calc(100% - 60px);
+  padding-top: 30px;
+}
