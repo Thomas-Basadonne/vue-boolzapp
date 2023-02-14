@@ -104,28 +104,21 @@ img {
 }
 
 /* CLASSI MESSAGGI */
-/* .box-messaggio {
-  height: 40px;
-  width: 250px;
-  line-height: 40px;
-  border-radius: 15px;
-} */
-
-.sent {
-  margin: 3px 0;
+.box-messaggio {
+  margin: 3px 40px;
   width: 40%;
-  background-color: #d5f9ba;
   border-radius: 5px;
   padding: 10px 10px;
+}
+
+.sent {
+  background-color: #d5f9ba;
   align-self: flex-end;
 }
 
 .received {
-  margin: 3px 0;
-  width: 40%;
   background-color: #fff;
   padding: 10px 10px;
-  border-radius: 5px;
 }
 
 footer {
