@@ -104,19 +104,34 @@ img {
 }
 
 /* CLASSI MESSAGGI */
-.box-message {
+/* .box-messaggio {
   height: 40px;
   width: 250px;
   line-height: 40px;
-}
+  border-radius: 15px;
+} */
 
 .sent {
-  background-color: rgb(124, 204, 144);
-  margin-left: 50%;
-  margin-right: 30px;
+  margin: 3px 0;
+  width: 40%;
+  background-color: #d5f9ba;
+  border-radius: 5px;
+  padding: 10px 10px;
+  align-self: flex-end;
 }
 
 .received {
-  background-color: wheat;
-  margin-left: 10%;
+  margin: 3px 0;
+  width: 40%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #eaeaea;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+  height: 60px;
 }

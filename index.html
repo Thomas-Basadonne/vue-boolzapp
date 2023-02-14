@@ -121,14 +121,25 @@
         </div>
 
         <!-- area messaggi -->
-        <div class="chat">
+        <div class="chat w-70 mx-auto d-flex flex-column">
 
             <div v-for="(message, index) in contacts[activeChat].messages"
-                class="mb-3 box-message"
+                class="mb-3 box-messaggio"
                 :class="(message.status == 'sent') ? 'sent' : 'received'"
            >
               {{ message.text }}
          </div>
+        
+
+        <!-- SEND A MESSAGE -->
+        <footer class="d-flex align-items-center">
+            <i class="fa-regular fa-face-smile px-4"></i>
+            <input
+              class="border-0 rounded-1 h-100 w-100"
+              type="text"
+              placeholder="Scrivi un messaggio" />
+            <i class="fa-solid fa-microphone px-4"></i>
+          </footer>
         </div>
           <!-- row -->
         </div>
