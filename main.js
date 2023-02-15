@@ -93,12 +93,12 @@ const app = Vue.createApp({
           messages: [
             {
               date: "10/01/2020 15:30:55",
-              MText: "Ricordati di chiamare la nonna",
+              text: "Ricordati di chiamare la nonna",
               status: "sent",
             },
             {
               date: "10/01/2020 15:50:00",
-              MText: "Va bene, stasera la sento",
+              text: "Va bene, stasera la sento",
               status: "received",
             },
           ],
