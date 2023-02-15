@@ -1,6 +1,24 @@
+:root {
+  /* * LINEAR GRADIENT BODY */
+  --primary-main-bg: #00a884;
+  --secondary-main-bg--start: #e3e1dc;
+  --secondary-main-bg--end: #d1d7db;
+  --main-bg: linear-gradient(
+    to bottom,
+    var(--primary-main-bg) 0px,
+    var(--primary-main-bg) 15vh,
+    var(--secondary-main-bg--start) 15vh,
+    var(--secondary-main-bg--end) 100vh
+  );
+}
+
+body {
+  height: 100vh;
+  background-image: var(--main-bg);
+}
 /* container app */
 .container-app {
-  width: 90%;
+  width: 80vw;
   height: 95vh;
   background-image: url(./img/mine.jpg);
   margin: auto;
@@ -95,6 +113,10 @@ img {
 .open-contact .icon-contact {
   width: 80px;
   padding-right: 1rem;
+}
+
+.contact-box:hover {
+  background-color: var(--low-contrast-bg);
 }
 
 /* area messaggi */
