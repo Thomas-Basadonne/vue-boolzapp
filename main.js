@@ -202,7 +202,7 @@ const app = Vue.createApp({
     researchName() {
       for (const contact of this.contacts) {
         if (
-          !contact.name.toLowerCase().includes(this.searchContact.toLowerCase())
+          !contact.name.toLowerCase().includes(this.searchUser.toLowerCase())
         ) {
           contact.visible = false;
         } else {
