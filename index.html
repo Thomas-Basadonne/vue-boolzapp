@@ -101,10 +101,11 @@
                 v-show="contact.visible == true">
                 <div class="d-flex">
                   <img :src="'./img/avatar' + (contact.avatar) + '.jpg'" alt="immagine profilo" />
-                  <div class="contact-text d-flex flex-column px-2">
+                  <div class="contact-text d-flex flex-column px-2 flex-grow-1">
                     <span>{{contact.name}}</span>
-                    <p>Ultimo messaggio inviato</p>
+                    <p>{{contact.messages[contact.messages.length -1].text}}</p>
                   </div>
+                  <span class="latest-access mx-1">12:00</span>
                 </div>
                 
               </div>
@@ -129,10 +130,11 @@
         <div class="chat w-70 mx-auto d-flex flex-column">
 
             <div v-for="(message, index) in contacts[activeChat].messages"
-                class="mb-3 box-messaggio"
+                class="mb-3 box-messaggio d-flex justify-content-between"
                 :class="(message.status == 'sent') ? 'sent' : 'received'"
            >
-              {{ message.text }}
+             <p> {{ message.text }}</p>
+              <small class="message-date ali">15:30</small>
          </div>
         
 

@@ -10,6 +10,23 @@
     var(--secondary-main-bg--start) 15vh,
     var(--secondary-main-bg--end) 100vh
   );
+  /* * APP */
+  --low-contrast-bg: #f0f2f5; /*          ? HEADER, FOOTER AND ACTIVE CONTACT   */
+  --lower-contrast-bg: #ffffff; /*        ? ALL CONTACTS                        */
+  --chat-bg: url("../img/mine.jpg"); /*      ? CHAT                                */
+
+  /* * MESSAGES */
+  --received-message-bg: #ffffff; /*      ? RECEIVED MESSAGES                   */
+  --sent-message-bg: #d9fdd3; /*          ? SENT MESSAGES                       */
+
+  /* * DISCLAIMER */
+  --disclaimer-main: #8edafc; /*          ? NOTIFICATION BAR BG, ICON COLOR     */
+  --disclaimer-low-contrast: #4f7485; /*  ? NOTIFICATION BAR LINK COLOR         */
+
+  /* * TEXTS */
+  --main-text: #111b21; /*                ? ALL TEXTS                           */
+  --secondary-text: #54656f; /*           ? ICONS                               */
+  --low-contrast-text: #667781; /*        ? LATEST ACCESS AND MESSAGE           */
 }
 
 body {
@@ -103,6 +120,11 @@ img {
   color: gray;
 }
 
+.latest-access {
+  color: var(--low-contrast-text);
+  font-size: 0.7rem;
+}
+
 /* contatto aperto */
 .open-contact {
   border-left: 1px solid lightgray;
@@ -126,6 +148,11 @@ img {
 }
 
 /* CLASSI MESSAGGI */
+.message-date {
+  color: var(--low-contrast-text);
+  font-size: 0.6rem;
+  align-self: end;
+}
 .box-messaggio {
   margin: 3px 40px;
   width: 40%;
