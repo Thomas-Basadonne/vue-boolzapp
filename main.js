@@ -199,6 +199,7 @@ const app = Vue.createApp({
         this.contacts[this.activeChat].messages.push(okMessage);
       }, 1000);
     },
+
     researchName() {
       for (const contact of this.contacts) {
         if (

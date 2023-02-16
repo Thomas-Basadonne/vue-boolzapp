@@ -95,16 +95,18 @@
             <!-- lista utenti -->
             <div class="contact-list">
               <div
-                class="contact-box  py-2 d-flex"
+                class="contact-box  py-2"
                 v-for="(contact, index) in contacts"
                 @click="allChat(index)"
                 v-show="contact.visible == true">
-              
-                <img :src="'./img/avatar' + (contact.avatar) + '.jpg'" alt="immagine profilo" />
-                <div class="contact-text d-flex flex-column px-2">
-                  <span>{{contact.name}}</span>
-                  <p>Ultimo messaggio inviato</p>
+                <div class="d-flex">
+                  <img :src="'./img/avatar' + (contact.avatar) + '.jpg'" alt="immagine profilo" />
+                  <div class="contact-text d-flex flex-column px-2">
+                    <span>{{contact.name}}</span>
+                    <p>Ultimo messaggio inviato</p>
+                  </div>
                 </div>
+                
               </div>
             </div>
           </div>
