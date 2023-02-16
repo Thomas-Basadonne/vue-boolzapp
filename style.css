@@ -150,3 +150,7 @@ footer {
   margin-top: auto;
   height: 60px;
 }
+
+i {
+  cursor: pointer;
+}

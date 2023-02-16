@@ -166,11 +166,49 @@ const app = Vue.createApp({
         },
       ],
       activeChat: 0,
+
+      newMessage: {
+        date: "",
+        text: "",
+        status: "sent",
+      },
+
+      searchUser: "",
     };
   },
   methods: {
     allChat(index) {
       this.activeChat = index;
+    },
+    sendAMessage() {
+      const objectMessage = {
+        date: "",
+        text: this.newMessage.text,
+        status: "sent",
+      };
+      this.contacts[this.activeChat].messages.push(objectMessage),
+        (this.newMessage.text = "");
+    },
+    returnMessage() {
+      setTimeout(() => {
+        const okMessage = {
+          date: "",
+          text: "ok",
+          status: "received",
+        };
+        this.contacts[this.activeChat].messages.push(okMessage);
+      }, 1000);
+    },
+    researchName() {
+      for (const contact of this.contacts) {
+        if (
+          !contact.name.toLowerCase().includes(this.searchContact.toLowerCase())
+        ) {
+          contact.visible = false;
+        } else {
+          contact.visible = true;
+        }
+      }
     },
   },
 });

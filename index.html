@@ -30,7 +30,7 @@
     ></script>
 
     <!-- LINK VUE.JS -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.min.js"></script>
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./style.css" />
@@ -85,6 +85,8 @@
                       type="search"
                       placeholder="Cerca o inizia una nuova chat"
                       aria-label="Search"
+                      v-model="searchUser"
+                      @keyup="researchName()"
                     />
                   </form>
                 </div>
@@ -96,7 +98,8 @@
                 class="contact-box  py-2 d-flex"
                 v-for="(contact, index) in contacts"
                 @click="allChat(index)"
-              >
+                v-show="contact.visible == true">
+              
                 <img :src="'./img/avatar' + (contact.avatar) + '.jpg'" alt="immagine profilo" />
                 <div class="contact-text d-flex flex-column px-2">
                   <span>{{contact.name}}</span>
@@ -137,7 +140,9 @@
             <input
               class="border-0 rounded-1 h-100 w-100"
               type="text"
-              placeholder="Scrivi un messaggio" />
+              placeholder="Scrivi un messaggio"
+              v-model="newMessage.text"
+              @keyUp.enter="sendAMessage(),returnMessage()" />
             <i class="fa-solid fa-microphone px-4"></i>
           </footer>
         </div>
